@@ -1,0 +1,179 @@
+/* overall  responsiveness css */
+
+@media only screen and (max-width: 1254px) and (min-width: 901px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+    .vidsec {
+        padding: 40px 0px;
+    }
+    .brandname {
+        display: none;
+    }
+    .bgimage2 {
+        background-size: cover;
+    }
+    .magicdiv {
+        display: none;
+    }
+}
+
+
+/* ipad */
+
+@media only screen and (max-width: 1254px) and (min-width: 622px) {
+    .brandname {
+        background: transparent;
+        width: 100%;
+        position: block;
+        top: 487px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .magicdiv {
+        display: block;
+        height: 560px;
+        background-image: url(./Images/2while.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bgimage2 {
+        background-size: cover;
+    }
+    .leftside h3:after {
+        top: 15%;
+        left: 79%;
+    }
+    #welcome {
+        margin: 0px 0 30px 66px;
+    }
+    .imgtext {
+        font-size: 25px;
+    }
+}
+
+
+/* content overall */
+
+@media only screen and ( max-width: 900px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 30px 0 0 0;
+    }
+}
+
+
+/* services overall */
+
+@media only screen and ( max-width: 660px) {
+    .logodesign {
+        margin: 50px 0;
+    }
+    .imgtext {
+        font-size: 1.5rem;
+    }
+    .introchild {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .ag-wave:before {
+        height: 108px;
+    }
+}
+
+
+/* phone */
+
+@media only screen and (max-width: 621px) {
+    .brandname {
+        background: transparent;
+        width: 100%;
+        top: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .magicdiv {
+        display: block;
+        height: 490px;
+        background-image: url(./Images/2while.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bgimage2 {
+        background-size: cover;
+    }
+    .leftside {
+        margin: 0px;
+    }
+    .leftside h3 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0 0 90px 0px;
+    }
+    .leftside h3:after {
+        top: 20%;
+        left: 33%;
+    }
+    .imgtext {
+        font-size: 25px;
+    }
+    #welcome {
+        padding: 0 22px;
+        text-align: center;
+        font-size: 29px;
+        margin: 0px 0 0 -4px;
+    }
+    .bigbubbleimg {
+        position: absolute;
+        top: 29px;
+        background-size: 27px;
+        height: 89px;
+        left: 152px;
+    }
+    #title {
+        text-transform: capitalize;
+        font-size: 34px;
+        padding: 4px;
+        position: relative;
+        margin: 25px 0px 0 0px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .btn {
+        margin: 38px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bgimage2 {
+        background-size: cover;
+        height: 360px;
+        background-position: center;
+    }
+    .gitem {
+        height: 209px;
+        width: 229px;
+    }
+    .imgsec,
+    .vidsec {
+        padding: 41px 2px;
+        margin: 12px;
+    }
+    .vidsize {
+        height: 187px;
+        width: 299px;
+        background-color: blue;
+    }
+    .btncenter {
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+}

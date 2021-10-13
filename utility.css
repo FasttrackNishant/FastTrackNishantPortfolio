@@ -1,0 +1,258 @@
+/* This is the utility classes css style sheet  */
+
+.navbar ul :hover {
+    background-color: yellow;
+}
+
+.ftdesign {
+    font-size: 28px;
+    font-weight: bold;
+    color: wheat;
+}
+
+
+/* wave animation */
+
+.wave-text::before {
+    content: "👋";
+    position: absolute;
+    animation: 1s wave ease infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Zoom on Hover  Animation */
+
+.zoom {
+    transition: all .3s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.logozoom {
+    transition: all .5s ease-in-out;
+}
+
+.logozoom:hover {
+    transform: scale(1.5);
+}
+
+.imgzoom {
+    transition: all .3s ease-in-out;
+}
+
+.imgzoom:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/* navbar  */
+
+
+/* Button CSS Utility  */
+
+
+/* load more css */
+
+#loadMore {
+    width: auto;
+    text-align: center;
+    margin-right: 14px;
+}
+
+#loadMore a {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* button text modifier */
+
+.connect {
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btncenter {
+    text-align: center;
+}
+
+.glow-on-hover {
+    width: 116px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffc0c0;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+/* footer icon animation */
+
+
+/* big bubble img */
+
+.bigbubbleimg {
+    position: absolute;
+    top: 244px;
+    background-size: 27px;
+    height: 153px;
+    left: -42px;
+}
+
+
+/* Wave*/
+
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+}
+
+.ag-wave {
+    padding: 50px 0;
+    background: url(./Images/wallpapertip_flat-black-wallpaper_650261.jpg);
+    position: relative;
+}
+
+.ag-wave:before {
+    content: "";
+    height: 170px;
+    width: 100%;
+    background: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/animation-wave-shadow/images/wave.svg) repeat-x scroll 0 0;
+    background-size: 1600px 198px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+    filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+    -webkit-animation: an-wave 20s linear infinite;
+    -moz-animation: an-wave 20s linear infinite;
+    -o-animation: an-wave 20s linear infinite;
+    animation: an-wave 20s linear infinite;
+}
+
+@-webkit-keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@-moz-keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@-o-keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ag-format-container {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 639px) {}
+
+@media only screen and (max-width: 479px) {}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .ag-format-container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+    .ag-format-container {
+        width: 960px;
+    }
+}
